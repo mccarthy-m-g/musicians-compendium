@@ -1,0 +1,140 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
+# Introduction {#intro}
+
+Music is an exciting art form and cultural activity that allows you to turn sound into expressions of emotion. The goal of "The Musician's Compendium" is to help you learn the most important aspects of music theory, performance, and recording that will allow you to be an accomplished musician. After reading this book you will have the knowledge to appreciate, understand, and create music in a variety of styles, using what you have learned to express yourself and bring people together.
+
+## What you will learn
+
+Music is a huge field, and there's no way you can master it by reading a single book. The goal of this book is to give you a solid foundation in music theory, performance, and recording that will help you begin (or continue) your journey to mastery. The basic model of the steps needed to become an accomplished musician looks something like this:
+
+```{r mastery-steps, echo=FALSE, fig.align='center', fig.asp=2, fig.cap="A basic model of the steps needed to become an accomplished musician.", fig.height=2, fig.width=6, out.width="100%"}
+# create diagram --------------------------------------------------------------
+
+### this has weird output in the pdf version...
+
+DiagrammeR::grViz("digraph {
+
+    graph [layout = dot, overlap = false]
+    
+    node [shape = circle, fontname = helvetica, fixedsize = true, width = 1]  
+    
+    node [fillcolor = red]
+    a [label = 'Study']
+    
+    node [fillcolor = red]
+    b [label = 'Practice']
+    c [label =  'Share']
+
+    # edge definitions with the node IDs
+    a -> {b c} [dir = both, minlen = 1]
+    {rank=same ; c -> b [dir = both, minlen = 4]};
+    }", 
+  height = 200)
+```
+
+First you should **study** music. This typically means learning music theory, analyzing compositions, actively listening to songs you enjoy, and so forth. You can study music alone by using textbooks or online resources (such as this book), or with others by taking classes or private lessons. The purpose of studying music is to 
+
+Once you begin studying music, you should **practice** it too. Practicing means taking the music you have studied and turning it into sound, then doing this process regularly to improve or maintain your musical proficiency. Practice can take many forms, including mental imagery, ear training, performance technique, and much more. Likewise, practice can be done alone or with others, and you can practice something for a very short time or a very long time. Practicing music is important because it will consolidate the knowledge you learn through studying and help you develop consistent technique, allowing you to express your musical ideas as easily as you would express other ideas with speech.
+
+Once you are comfortable with your musical proficiency, you should **share** your music with others. Sharing music is an excellent way to grow as a musician. Performing in front of others will help you identify what parts of your music other people enjoy. Performing with other musicians will help you mature musically. And sharing recordings of your music online will help you reach a wider audience.
+
+Studying, practicing, and sharing are continuous, interrelated processes. Although you might do them in the order above, quite often you will find yourself doing them in other orders, or doing all three simultaneously. For instance, during a music lesson your teacher might have you study a musical scale, have you practice it along with them, and then give you feedback on how to improve your performance. Or you might come across a new musical concept you like, compose and record a piece of music with that concept, and then share that music with your followers on social media.
+
+There is no one way to learn music theory, performance, and recording; nor is there one way to study, practice, and share music. This is apparent by looking at music history and culture. As such, you should make use of this book in the manner that suits your needs and goals best.
+
+## How this book is organized
+
+The previous description of the steps needed to become an accomplished musician is organized roughly according to the order in which you will do them in this book. Within each section we try and stick to a similar pattern:
+
+- Start with a brief introduction to the topic along with some motivating examples so you can see the bigger picture. The introductory examples will typically have an audio and transcription component so you can hear what you will be learning about and have a try at it before diving into the details.
+
+- Then add depth to the topic, discussing the theory and practice behind it, exploring more examples of it, quizzing you on it, and applying it to your musical repetoire.
+
+- End with reference materials and exercises to help you study, practice, and memorize what you have learned. While it’s tempting to skip the reference materials and exercises, there’s no better way to learn than studying and practicing. Indeed, after you have a grasp of a topic you should expect to spend most of your time memorizing the reference materials as memorization is necessary if you hope to achieve musical mastery.
+
+However, as noted previously, these steps are continuous, interrelated processes that can happen in any order, so feel free to skip ahead and go back in a section if you find this order does not work for you.  
+
+
+## What you won't learn
+
+There are some important parts of music mastery that this book cannot teach you. Although the goal of this book is to help you begin or continue your journey to mastery, it is still only a book. It cannot give you feedback on your progress that another person can. That means this book cannot cover every important topic.
+
+### Creativity
+
+blah blah blah
+
+### Playing technique
+
+blah blah blah
+
+### Ensemble playing
+
+blah blah blah
+
+### Instrument care
+
+blah blah blah
+
+## Prerequisites
+
+We have made a few assumptions about what you need in order to get the most out of this book. You should have experience listening to music, and it’s helpful if you have some musical experience already.
+
+There are X things you need to get the most out of this book.
+
+### A pitched instrument
+
+Whether it's a piano, guitar, or your voice, you will need a pitched instrument to learn and practice with. Pitched instruments include everything but drums (for the most part). If there is a music store in your area it should be easy to find a good-quality instrument for a reasonable price if you do not have one. We do not recommend purchasing an instrument online as instruments of the same make and model can vary in quality, so it's best to try before you buy.
+
+You also need to choose between a monophonic or polyphonic instrument. **Monophonic** instruments can only play one sound at a time. Your voice, a saxophone, and a flute are all monophonic instruments. **Polyphonic** instruments can play multiple sounds at a time. A guitar, piano, or harp are all polyphonic instruments. This book covers material that applies to monophonic and polyphonic instruments.
+
+## Getting help and learning more
+
+## Acknowledgments
+
+```{r}
+embed_audio <- function(src, type = "audio/mpeg") {
+  if (knitr::is_html_output()) {
+    sprintf("<audio controls>
+               <source src='audio/%s' type='%s'>
+             Your browser does not support the audio element.
+            </audio>", src, type)
+  } else print("")
+}
+```
+
+`r embed_audio("Clair De Lune.mp3")`
+<!-- embed html audio
+<audio controls>
+  <source src="audio/Clair De Lune.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+end html audio chunk -->
+
+This book was written in the open, and many people contributed pull requests to fix minor problems. Special thanks goes to everyone who contributed via GitHub: 
+
+```{r contribs, results = "asis", echo = FALSE, message = FALSE}
+library(dplyr)
+# git --no-pager shortlog -ns > contribs.txt
+contribs <- readr::read_tsv("contribs.txt", col_names = c("n", "name"))
+contribs <- contribs %>% 
+  filter(!name %in% c("mccarthy-m-g", "Michael McCarthy")) %>% 
+  arrange(name) %>% 
+  mutate(uname = ifelse(!grepl(" ", name), paste0("@", name), name))
+cat("Thanks go to all contributers in alphabetical order: ")
+cat(paste0(contribs$uname, collapse = ", "))
+cat(".\n")
+```
+
+## Colophon
+
+An online version of this book is available at https://. The source of the book is available at https://github.com/mccarthy-m-g/musicians-compendium. The book is powered by https://bookdown.org which makes it easy to turn R markdown files into HTML, PDF, and EPUB.
+
+This book was built with:
+
+```{r session-info}
+sessioninfo::session_info(c("bookdown", "tidyverse", "DiagrammeR", "tabr"))
+```

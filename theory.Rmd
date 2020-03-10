@@ -1,0 +1,5 @@
+# (PART) Theory {-}
+
+# Introduction {#theory-intro}
+
+The goal of the first part of this book is to get you up to speed with the basics of **music theory** as quickly as possible.

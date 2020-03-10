@@ -1,0 +1,5 @@
+# (PART) Recording {-}
+
+# Introduction {#recording-intro}
+
+The goal of the first part of this book is to teach you how to **record music**.

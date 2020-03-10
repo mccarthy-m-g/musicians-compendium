@@ -1,0 +1,5 @@
+# (PART) Performance {-}
+
+# Introduction {#performance-intro}
+
+The goal of the second part of this book is to give you a broad overview of **music performance**.
