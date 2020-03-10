@@ -18,7 +18,7 @@ This book is (and will always be) **free to use**, and is licensed under the [Cr
 
 If you would like to **support my work** you can [make a small donation to me](https://www.paypal.com/donate/?token=_KFXcgpYHlQgtjDKSPBdRhIfSLoiQVKrNeyaxNvbzFDm3zqXDOkcTZ0R9F_VhTvY87_tXW&country.x=CA&locale.x=CA). Your donation will go toward improving the quality and quantity of content I can produce for you. If you cannot afford to make a donation but would still like to support my work, you can share your favourite content on this website with your peers, colleagues, friends, or family.
 
-The book is written in [RMarkdown](https://rmarkdown.rstudio.com) with [bookdown](https://bookdown.org). <!-- It is automatically rebuilt from [source](https://github.com/mccarthy-m-g/musicians-compendium) by [travis](http://travis-ci.org/). The Musician's Compendium is a collaborative effort and many people have contributed fixes and improvements via pull request. -->
+The book is written in [RMarkdown](https://rmarkdown.rstudio.com) with [bookdown](https://bookdown.org). It is automatically rebuilt from [source](https://github.com/mccarthy-m-g/musicians-compendium) by [travis](http://travis-ci.org/). The Musician's Compendium is a collaborative effort and many people have contributed fixes and improvements via pull request.
 
 ```{r, results = "asis", echo = FALSE, message = FALSE}
 library(dplyr)
