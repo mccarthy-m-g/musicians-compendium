@@ -1,0 +1,19 @@
+bookdown::gitbook:
+  css: style.css
+  config:
+    toc:
+      collapse: section
+      before: |
+        <li><strong><a href="./">The Musician's Compendium</a></strong></li>
+      after: |
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+    edit: https://github.com/mccarthy-m-g/musicians-compendium/edit/master/%s
+    download: []
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+  latex_engine: xelatex
+  citation_package: natbib
+  keep_tex: yes
+  extra_dependencies: ["flafter"]
+bookdown::epub_book: default

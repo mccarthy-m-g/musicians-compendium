@@ -1,0 +1,25 @@
+book_filename: "musicians-compendium"
+language:
+  ui:
+    chapter_name: " "
+delete_merged_file: true
+
+new_session: yes
+
+rmd_files: [
+  index.Rmd,
+  intro.Rmd,
+  
+  theory.Rmd,
+  intervals.Rmd,
+  scales.Rmd,
+  rhythm.Rmd,
+  
+  performance.Rmd,
+  
+  recording.Rmd,
+  
+  contribute.Rmd,
+]
+
+before_chapter_script: "_common.R"
