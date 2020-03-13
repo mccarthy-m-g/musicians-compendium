@@ -19,7 +19,7 @@ jobs:
           
       - name: Install LilyPond
         run: |
-          brew install LilyPond
+          brew cask install lilypond
 
       - name: Cache R packages
         uses: actions/cache@v1
