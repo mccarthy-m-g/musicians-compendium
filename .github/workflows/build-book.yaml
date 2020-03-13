@@ -17,6 +17,10 @@ jobs:
           brew install pandoc
           brew install pandoc-citeproc
           
+      - name: Install LilyPond
+        run: |
+          brew cask install lilypond
+          
       - name: Cache R packages
         uses: actions/cache@v1
         with:
