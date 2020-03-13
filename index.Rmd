@@ -12,22 +12,18 @@ github-repo: mccarthy-m-g/musicians-compendium
 description: "The Musican's Compendium is a comprehensive educational resource of all things music, covering music theory, performance, recording, and much more."
 ---
 
-# Welcome
+# Welcome {-}
 
-This book is (and will always be) **free to use**, and is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](http://creativecommons.org/licenses/by-nc-nd/4.0/) License. However, the musical works in this book are not under this license. Their ownership is retained by their respective copyright owners.
+This is the online version of *The Musician's Compendium*, a **book currently under early development**.
+
+The Musican's Compendium is a comprehensive educational resource of all things music, covering music theory, performance, recording, and much more.
 
 If you would like to **support my work** you can [make a small donation to me](https://www.paypal.com/donate/?token=_KFXcgpYHlQgtjDKSPBdRhIfSLoiQVKrNeyaxNvbzFDm3zqXDOkcTZ0R9F_VhTvY87_tXW&country.x=CA&locale.x=CA). Your donation will go toward improving the quality and quantity of content I can produce for you. If you cannot afford to make a donation but would still like to support my work, you can share your favourite content on this website with your peers, colleagues, friends, or family.
 
-The book is written in [RMarkdown](https://rmarkdown.rstudio.com) with [bookdown](https://bookdown.org). It is automatically rebuilt from [source](https://github.com/mccarthy-m-g/musicians-compendium) using [github actions](https://help.github.com/en/actions). The Musician's Compendium is a collaborative effort and fixes and improvements can be contributed via pull request.
+The book is written in [RMarkdown](https://rmarkdown.rstudio.com) with [bookdown](https://bookdown.org). It is automatically built from [source](https://github.com/mccarthy-m-g/musicians-compendium) using [github actions](https://help.github.com/en/actions). The Musician's Compendium is a collaborative effort and fixes and improvements can be contributed via pull request.
 
-```{r, results = "asis", echo = FALSE, message = FALSE}
-library(dplyr)
-contributors <- readr::read_csv("contributors.csv", col_types = list())
-contributors <- contributors %>% 
-  mutate(
-    link = glue::glue("[\\@{login}](https://github.com/{login})"),
-    desc = ifelse(is.na(name), link, glue::glue("{name} ({link})"))
-  )
-cat("A big thanks goes to everyone who has contributed!\n")
-cat(paste0(contributors$desc, collapse = ", "))
-```
+## License {-}
+
+This book is licensed to you under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](http://creativecommons.org/licenses/by-nc-nd/4.0/) License.
+
+The musical works in this book (i.e., melodies, engravings, recordings, videos, etc.) are not under this license. Their ownership is retained by their respective copyright owners.
