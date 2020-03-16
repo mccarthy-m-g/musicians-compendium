@@ -94,8 +94,6 @@ You also need to choose between a monophonic or polyphonic instrument. **Monopho
 
 ## Acknowledgments
 
-This book was written in the open, and many people contributed pull requests to fix minor problems. Special thanks goes to everyone who contributed via GitHub: 
-
 ```{r, eval = FALSE, echo = FALSE}
 # code taken from: https://github.com/hadley/mastering-shiny/blob/master/introduction.Rmd
 library(tidyverse)
@@ -138,16 +136,16 @@ contributors <- contributors %>%
     login = paste0("\\@", login),
     desc = ifelse(is.na(name), login, paste0(name, " (", login, ")"))
   )
-cat("A big thank you to all ", nrow(contributors), " people who contributed specific improvements via GitHub pull requests (in alphabetical order by username): ", sep = "")
+cat("This book was written in the open, and many people have contributed fixes and improvements. A big thank you to all ", nrow(contributors), " people who contributed via GitHub pull requests (in alphabetical order by username): ", sep = "")
 cat(paste0(contributors$desc, collapse = ", "))
 cat(".\n")
 ```
 
 ## Colophon
 
-An online version of this book is available at https://. The source of the book is available at https://github.com/mccarthy-m-g/musicians-compendium. The book is powered by https://bookdown.org which makes it easy to turn R markdown files into HTML, PDF, and EPUB.
+This book was written in [RStudio](http://www.rstudio.com/ide/) using [bookdown](http://bookdown.org/). The online version of this book is available at https://musicianscompendium.netlify.com. It is hosted with [netlify](http://netlify.com/), and is automatically updated after every commit by [GitHub Actions](https://help.github.com/en/actions). The complete source is available at https://github.com/mccarthy-m-g/musicians-compendium.
 
-This book was built with:
+This version of the book was built with `r R.version.string` and the following packages:
 
 ```{r, echo = FALSE, results="asis"}
 # code taken from: https://github.com/hadley/mastering-shiny/blob/master/introduction.Rmd
