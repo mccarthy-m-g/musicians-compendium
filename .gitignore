@@ -7,8 +7,8 @@ _bookdown_files
 musicians-compendium.rds
 
 # lilypond output
-lilypond/*-systems.tex
-lilypond/*-systems.texi
-lilypond/*-systems.count
-lilypond/*-1.eps
-lilypond/*-1.pdf
+*-systems.tex
+*-systems.texi
+*-systems.count
+*-1.eps
+*-1.pdf
