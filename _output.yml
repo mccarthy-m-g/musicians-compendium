@@ -6,7 +6,7 @@ bookdown::gitbook:
       before: |
         <li><strong><a href="./">The Musician's Compendium</a></strong></li>
       after: |
-        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+        <li><a href="https://michaelmccarthy.netlify.com" target="blank">Michael McCarthy</a></li>
     edit: https://github.com/mccarthy-m-g/musicians-compendium/edit/master/%s
     download: []
 bookdown::pdf_book:
