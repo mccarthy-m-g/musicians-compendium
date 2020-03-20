@@ -16,4 +16,5 @@ bookdown::pdf_book:
   citation_package: natbib
   keep_tex: yes
   extra_dependencies: ["flafter"]
+  df_print: kable
 bookdown::epub_book: default
