@@ -1,6 +1,12 @@
 set.seed(1014)
 options(digits = 3)
 
+###############################################################################
+## setup
+###############################################################################
+library(tidyverse)
+library(patchwork)
+
 knitr::opts_chunk$set(
   comment = "#>",
   collapse = TRUE,
@@ -9,7 +15,8 @@ knitr::opts_chunk$set(
   fig.align = "left",
   # fig.width = 6,
   # fig.asp = 0.618,  # 1 / phi
-  fig.show = "hold"
+  fig.show = "hold",
+  message = FALSE
 )
 
 options(dplyr.print_min = 6,
@@ -35,8 +42,7 @@ embed_audio <- function(src, type = "audio/mpeg", attribute = "controls",
 ## functions to control out.width scaling
 ###############################################################################
 
-# required packages
-library(tidyverse)
+# required packages library(tidyverse)
 
 # create function to extract filepaths and metadata for all lilypond PNGs -----
 image_dim <- function() {
