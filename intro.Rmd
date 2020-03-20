@@ -6,10 +6,8 @@ Music is an exciting art form and cultural activity that allows you to turn soun
 
 Music is a huge field, and there's no way you can master it by reading a single book. The goal of this book is to give you a solid foundation in music theory, performance, and recording that will help you begin (or continue) your journey to mastery. The basic model of the steps needed to become an accomplished musician looks something like this:
 
-```{r mastery-steps, fig.align='center', fig.asp=2, fig.cap="A basic model of the steps needed to become an accomplished musician.", fig.height=2, fig.width=6, out.width="100%"}
+```{r mastery-steps, fig.align='center', fig.cap="A basic model of the steps needed to become an accomplished musician.", out.width="40%"}
 # create diagram --------------------------------------------------------------
-
-### this has weird output in the pdf version and seems to break the latex code in the pdf version
 
 mastery_steps <- DiagrammeR::grViz("digraph {
 
@@ -27,12 +25,12 @@ mastery_steps <- DiagrammeR::grViz("digraph {
     # edge definitions with the node IDs
     a -> {b c} [dir = both, minlen = 1]
     {rank=same ; c -> b [dir = both, minlen = 4]};
-    }", 
-  height = 200)
+    }")
 
  rsvg::rsvg_png(
       charToRaw(DiagrammeRsvg::export_svg(mastery_steps)),
-      file = "figures/mastery-steps.png"
+      file = "figures/mastery-steps.png",
+      height = 1440
     )
 
 knitr::include_graphics("figures/mastery-steps.png")
