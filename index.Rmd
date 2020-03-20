@@ -1,6 +1,6 @@
 --- 
 title: "The Musician's Compendium"
-author: "Michael McCarthy"
+author: "[Michael McCarthy](https://michaelmccarthy.netlify.com)"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
