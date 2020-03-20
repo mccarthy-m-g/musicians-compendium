@@ -2,5 +2,13 @@ Package: placeholder
 Type: Book
 Title: Does not matter.
 Version: 0.0.1
-Imports: bookdown, tidyverse, DiagrammeR, tabr, tinytex, sessioninfo, webshot
+Imports: bookdown,
+         DiagrammeR,
+         DiagrammeRsvg,
+         magick,
+         sessioninfo,
+         tabr,
+         tidyverse,
+         tinytex,
+         webshot,
 Remotes: rstudio/bookdown
