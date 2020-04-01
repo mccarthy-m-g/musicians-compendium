@@ -19,7 +19,12 @@ rmd_files: [
   
   recording.Rmd,
   
+  resources.Rmd,
+  intervals-guitar.Rmd,
+  scales-resource.Rmd,
+  
   contribute.Rmd,
 ]
 
 before_chapter_script: "_common.R"
+after_chapter_script:  "_copyDirectory.R"

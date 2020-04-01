@@ -12,3 +12,27 @@ pre {
 pre code {
   white-space: inherit;
 }
+
+@font-face {
+  font-family: 'Bravura Text'; /* https://github.com/steinbergmedia/bravura */
+  /*font-weight: 400;
+  font-style: normal;
+  font-display: swap;*/
+  src: url('fonts/bravuratext.eot');
+    src: url('fonts/bravuratext.eot?#iefix') format('embedded-opentype'),
+    url('fonts/bravuratext.woff') format('woff'),
+    url('fonts/bravuratext.otf')  format('opentype');
+}
+
+.music {
+  font-family: 'Bravura Text', 'Helvetica Neue';
+  font-size: .85em;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
