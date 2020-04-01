@@ -1,0 +1,5 @@
+# (PART) Resources {-}
+
+# Introduction {#resources-intro}
+
+This section contains reference materials for the music theory covered in this book.

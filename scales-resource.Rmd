@@ -1,0 +1,81 @@
+# Scales
+
+```{r}
+source("_musicSymbols.R") # have to call this here because it does not work when called in `_common.R` or when called as a before_chapter_script in `_bookdown.yml`
+```
+
+Below are charts for all of the modes, and their notes and intervals.
+
+## Ionian Mode Notes
+
+| Mode       | P1     | M2     | M3     | P4     | P5     | M6     | M7     |
+|:-----------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
+| **C**      | C      | D      | E      | F      | G      | A      | B      |
+| **G**      | G      | A      | B      | C      | D      | E      | F`r s` |
+| **D**      | D      | E      | F`r s` | G      | A      | B      | C`r s` |
+| **A**      | A      | B      | C`r s` | D      | E      | F`r s` | G`r s` |
+| **E**      | E      | F`r s` | G`r s` | A      | B      | C`r s` | D`r s` |
+| **B**      | B      | C`r s` | D`r s` | E      | F`r s` | G`r s` | A`r s` |
+| **F**`r s` | F`r s` | G`r s` | A`r s` | B      | C`r s` | D`r s` | E`r s` |
+| **D**`r f` | D`r f` | E`r f` | F      | G`r f` | A`r f` | B`r f` | C      |
+| **A**`r f` | A`r f` | B`r f` | C      | D`r f` | E`r f` | F      | G      |
+| **E**`r f` | E`r f` | F      | G      | A`r f` | B`r f` | C      | D      |
+| **B**`r f` | B`r f` | C      | D      | E`r f` | F      | G      | A      |
+| **F**      | F      | G      | A      | B`r f` | C      | D      | E      |
+
+## Dorian Mode Notes
+
+|            | P1     | M2     | m3     | P4     | P5     | M6     | m7     |
+|:-----------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
+| **D**      | D      | E      | F      | G      | A      | B      | C      |
+| **A**      | A      | B      | C      | D      | E      | F`r s` | G      |
+| **E**      | E      | F`r s` | G      | A      | B      | C`r s` | D      |
+| **B**      | B      | C`r s` | D      | E      | F`r s` | G`r s` | A      |
+| **F**`r s` | F`r s` | G`r s` | A      | B      | C`r s` | D`r s` | E      |
+| **C**`r s` | C`r s` | D`r s` | E      | F`r s` | G`r s` | A`r s` | B      |
+| **G**`r s` | G`r s` | A`r s` | B      | C`r s` | D`r s` | E`r s` | F`r s` |
+| **E**`r f` | E`r f` | F      | G`r f` | A`r f` | B`r f` | C      | D`r f` |
+| **B**`r f` | B`r f` | C      | D`r f` | E`r f` | F      | G      | A`r f` |
+| **F**      | F      | G      | A`r f` | B`r f` | C      | D      | E`r f` |
+| **C**      | C      | D      | E`r f` | F      | G      | A      | B`r f` |
+| **G**      | G      | A      | B`r f` | C      | D      | E      | F      |
+
+## Phyrgian Mode Notes
+
+|            | P1     | m2     | m3     | P4     | P5     | m6     | m7     |
+|:-----------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
+| **E**      | E      | F      | G      | A      | B      | C      | D      |
+| **B**      | B      | C      | D      | E      | F`r s` | G      | A      |
+| **F**`r s` | F`r s` | G      | A      | B      | C`r s` | D      | E      |
+| **C**`r s` | C`r s` | D      | E      | F`r s` | G`r s` | A      | B      |
+| **G**`r s` | G`r s` | A      | B      | C`r s` | D`r s` | E      | F`r s` |
+| **D**`r s` | D`r s` | E      | F`r s` | G`r s` | A`r s` | B      | C`r s` |
+| **A**`r s` | A`r s` | B      | C`r s` | D`r s` | E`r s` | F`r s` | G`r s` |
+| **F**      | F      | G`r f` | A`r f` | B`r f` | C      | D`r f` | E`r f` |
+| **C**      | C      | D`r f` | E`r f` | F      | G      | A`r f` | B`r f` |
+| **G**      | G      | A`r f` | B`r f` | C      | D      | E`r f` | F      |
+| **D**      | D      | E`r f` | F      | G      | A      | B`r f` | C      |
+| **A**      | A      | B`r f` | C      | D      | E      | F      | G      |
+
+## Lydian Mode Notes
+
+## Mixolydian Mode Notes
+
+## Aeolian Mode Notes
+
+|            | P1     | M2     | m3     | M4     | M5     | m6     | m7     |
+|:-----------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
+| **A**      | A      | B      | C      | D      | E      | F      | G      |
+| **E**      | E      | F`r s` | G      | A      | B      | C      | D      |
+| **B**      | B      | C`r s` | D      | E      | F`r s` | G      | A      |
+| **F**`r s` | F`r s` | G`r s` | A      | B      | C`r s` | D      | E      |
+| **C**`r s` | C`r s` | D`r s` | E      | F`r s` | G`r s` | A      | B      |
+| **G**`r s` | G`r s` | A`r s` | B      | C`r s` | D`r s` | E      | F`r s` |
+| **D**`r s` | D`r s` | E`r s` | F`r s` | G`r s` | A`r s` | B      | C`r s` |
+| **B**`r f` | B`r f` | C      | D`r f` | E`r f` | F      | G`r f` | A`r f` |
+| **F**      | F      | G      | A`r f` | B`r f` | C      | D`r f` | E`r f` |
+| **C**      | C      | D      | E`r f` | F      | G      | A`r f` | B`r f` |
+| **G**      | G      | A      | B`r f` | C      | D      | E`r f` | F      |
+| **D**      | D      | E      | F      | G      | A      | B`r f` | C      |
+
+## Locrian Mode Notes
