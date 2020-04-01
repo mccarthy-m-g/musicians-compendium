@@ -2,4 +2,14 @@
 
 # Introduction {#theory-intro}
 
-The goal of the first part of this book is to get you up to speed with the basics of **music theory** as quickly as possible.
+The goal of the first part of this book is to get you up to speed with the basics of **music theory** as quickly as possible. Music theory is the study of the concepts, methods, and practices musicians use to make music. The goal of music theory is to describe and understand music, providing musicians with a common language for communicating their musical ideas with one another.
+
+In this part of the book you will learn to:
+
+- Describe and understand music using the language of music theory.
+
+- Translate musical sounds into musical engravings that can be read by yourself and other musicians.
+
+- Communicate your musical ideas with other musicians, regardless of the instrument they play.
+
+While you are reading through this part of the book you should keep your instrument with you and play along with the examples. Doing so will help you build a stronger connection between written music and what it is supposed to sound like when played.
