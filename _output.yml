@@ -1,5 +1,6 @@
 bookdown::gitbook:
   css: style.css
+  pandoc_args: [ "--csl", "apa.csl" ]
   config:
     toc:
       collapse: section
@@ -10,13 +11,14 @@ bookdown::gitbook:
     edit: https://github.com/mccarthy-m-g/musicians-compendium/edit/master/%s
     download: []
 bookdown::pdf_book:
+  pandoc_args: [ "--csl", "apa.csl" ]
   includes:
     in_header: preamble.tex
   latex_engine: xelatex
-  citation_package: natbib
+  citation_package: none
   keep_tex: yes
   extra_dependencies: ["flafter"]
   df_print: kable
 bookdown::epub_book:
   stylesheet: style.css
-  pandoc_args: --epub-embed-font=fonts/bravuratext.otf
+  pandoc_args: [ "--epub-embed-font=fonts/bravuratext.otf", "--csl", "apa.csl" ]

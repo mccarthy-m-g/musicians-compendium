@@ -5,8 +5,8 @@ date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
-#bibliography: [] ### uncomment if using .bib
-biblio-style: apalike
+bibliography: ["references.bib"]
+#biblio-style: "apa.csl"
 link-citations: yes
 github-repo: mccarthy-m-g/musicians-compendium
 description: "The Musican's Compendium is a comprehensive educational resource of all things music, covering music theory, performance, recording, and much more."
