@@ -1,5 +1,13 @@
 # Intervals
 
+<!-- An interval is the difference in pitch between two sounds. -->
+
+<!-- distance between two notes. As we have discussed, a scale is made up of a particular pattern of tone and semitone intervals. Thus, we use intervals to define and create scales, and as an extension, define and create chords. When the notes of an interval are played one after the other, the interval is called a melodic interval. We use melodic intervals when we play our scales up and down, write a melody, or play a solo. -->
+
+<!-- When the notes of an interval are played at the same time, the interval is called a harmonic interval. We use harmonic intervals when we play and construct chords. In chapter 3 we will examine how chords are constructed using the intervals of a scale. -->
+
+<!-- All intervals have a specific number and name attached to them. We can measure this number by counting the letter names of the notes in the interval from lowest to highest. -->
+
 ## Interval names and symbols
 
 ## Naming intervals
