@@ -1,0 +1,78 @@
+# Sound
+
+One function of music theory is to provide musicians with a common language for communicating their musical ideas with one another. In practice this means translating the physical and psychological properties of sound in a way that is useful for describing and understanding music. <!-- Thus, where a scientist might describe a sound in terms of its frequency content, a musician might describe the same sound in terms of its pitch and timbre. Similarly, a scientist might represent a sound visually using a spectrogram, whereas a musician might represent the same sound visually using sheet music. --> In this book we will focus on the musician's perspective on sound. Before doing so however, it is helpful to understand some of the basic physical and psychological properties of sound as they relate to music.
+
+## Physical properties
+
+Sound is a **longitudinal, mechanical wave of pressure** that transfers energy through a solid, liquid, or gas medium. Sound occurs when a vibrating object---the sound **source**---displaces the particles around it, causing them to vibrate. These vibrations will propagate in the direction of the wave, creating variations in pressure along their path until they run out of energy [@hansen_FundamentalsAcoustics_1995].
+
+Most sounds <!-- produced by musical instruments --> can be categorized as either noise or tone (or some blurry combination of the two). **Noise** refers to an unpitched sound, such as a clap or drum hit. **Tone** refers to a pitched sound, such as a whistle or guitar melody. Tones can be pure or complex. **Pure tones**, as their name implies, are the purest form of sound, consisting of a single sound wave. A pure tone is characterized by its amplitude, wavelength, frequency, phase, and period [@burgetal_DigitalSoundMusic_2016].
+
+<!-- define characteristics here -->
+
+```{r sinewave}
+# add figure with characteristics labelled
+```
+
+<!-- Both noise and complex tones can be thought of as being made of multiple pure tones -->
+
+Sound production in musical instruments often depends on the collective behaviour of several sound sources, which interact to give an instrument its unique sound. Some familiar sound sources in musical instruments are the vibrations of strings (violin, guitar, piano, etc.), bars or rods (xylophone, glockenspiel, chimes, clarinet reed), membranes (drums, banjo), plates or shells (cymbal, gong, bell), air in a tube (organ pipe, brass and woodwind instruments, marimba resonator), air in an enclosed container (drum, violin, or guitar body), or electricity (synthesizers) [@fletcherrossing_PhysicsMusicalInstruments_1998].
+
+### Noise and tone
+
+Most sounds produced by musical instruments can be categorized as either noise or tone (or some blurry combination of the two). **Noise** refers to an unpitched sound, such as a clap or drum hit. **Tone** refers to a pitched sound, such as a whistle or guitar melody. 
+
+<!-- The distinction between noise and tone largely depends on the frequencies present in a sound and their relative amplitudes. -->
+
+Tones can be pure or complex. **Pure tones** are made of a single sound wave and **complex tones** are made of multiple sound waves. The waveforms in complex tones are called **partials**, with the lowest frequency partial in the tone being referred to as the **fundamental**, and the partials above the fundamental being referred to as **overtones**. Most tones you hear in music are complex, with notable exceptions coming from tuning forks and some electronic music instruments.
+
+```{r tones}
+# library(tuneR)
+# # add diagram of simple and complex tones
+# x <- tuneR::sine(440, duration = 1000) + tuneR::sine(880, duration = 1000)
+# normalize(x, unit = "32")
+#   plot(x)
+```
+
+### Frequency and Waveforms
+
+Because sound travels as a wave, we can visualize what any given sound would look like---there are even devices such as spectrograms and oscilloscopes that can do this in real-time.
+
+
+
+
+## Psychological properties of sound
+
+When a sound wave reaches our ear it is directed by the **external ear** towards the **middle ear**, where it will strike our **ear drum**, causing it to vibrate at the same frequency as the sound wave. These vibrations are transmitted to the middle ear bones, whose vibrations create waves in the fluid of the **cochlea** in the **inner ear**. These waves travel through the cochlea, eventually vibrating the **organ of Corti**, causing hair cells in the organ to brush against a fixed structure called the **tectorial membrane**. This brushing causes the nerve fibers attached to the hairs to depolarize, creating electrical impulses that our sent to the brain for further processing in the **auditory cortex** [@amuntsetal_Chapter36Auditory_2012; @casalemurr_PhysiologyCochlearFunction_2020]. By the end of this complex process, we hear sound. <!-- this is a pretty info-heavy paragraph, maybe simplify it. -->
+<!-- it might be interesting to talk about tonotopy and infra- and ultrasound here -->
+
+## Musical properties
+
+### Pitch
+
+**Pitch** refers to how low or high we perceive a tone to be. Pitch perception is subjective, involving a combination of the frequency of a tone and the brain's processing of it. A tone's frequency is typically characterized by how many times its waveform oscillates per second, with lower frequency tones being perceived as lower pitches and higher frequency tones being perceived as higher pitches. <!--The pitch of a complex tone is usually perceived as the frequency of the fundamental.--> A demonstration of this can be seen in <!--  -->. 
+
+```{r frequencies}
+# add diagram of a low hz sinosidal waveform and a high hz one. refer to it intext using \@ref(fig:frequencies)
+```
+
+Both scientists and musicians describe the frequency of sound using the unit measure **hertz** (symbol: Hz), which is defined as one cycle per second. Humans have a hearing range between 20 Hz and 20,000 Hz [@amuntsetal_Chapter36Auditory_2012]; however, musical instruments and vocalists only produce pitches in a portion of this range. The lowest note of an 88 key piano, for instance, is often tuned to 28 Hz and the highest note to 4100 Hz [@brown_AppendixFrequencyRange_2017a].
+
+The use of pitch in music varies between musical styles and cultures. 
+<!-- difference between, e.g., 12 tone equal temprament and microtonal -->
+
+### Loudness
+
+Loudness, or amplitude, refers to how quiet or loud a sound is.
+
+### Duration
+
+### Timbre
+
+<!-- >The thing setting apart tone from noise is the amplitude of their overtones. In noise all frequencies of the sound have the same amplitude, whereas in tone the amplitudes are different. (fact check this) -->
+
+When discussing pitch we noted that musical instruments use only a portion of the human hearing range. 
+
+although there are instruments whoae overtones create sounds above the human hearing range [@petrosinocanalis_UltrasonicComponentsMusical_2016].
+
+### Noise
