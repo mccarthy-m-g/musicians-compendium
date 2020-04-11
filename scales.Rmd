@@ -27,4 +27,14 @@ g[[1]] + g[[2]] + g[[3]] + g[[4]] + g[[5]] +
   plot_layout(ncol = 3)
 ```
 
+#### Template for including exercises
+
+Exercise \@ref(exr:c-ionian) shows an interesting way to play the C Major scale.
+
+```{exercise, c-ionian, name="The C Major Scale", echo=TRUE}
+Try playing this at different tempos!
+```
+```{r, fig.cap="", out.width = out_width("c-ionian.png")}
+knitr::include_graphics("lilypond/scales/ionian/c/c-ionian.png")
+```
 
