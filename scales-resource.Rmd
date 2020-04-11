@@ -59,7 +59,37 @@ Below are charts for all of the modes, and their notes and intervals.
 
 ## Lydian Mode Notes
 
+|            | P1     | M2     | M3     | A4     | P5     | M6     | M7     |
+|:-----------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
+| **F**      | F      | G      | A      | B      | C      | D      | E      |
+| **C**      | C      | D      | E      | F`r s` | G      | A      | B      |
+| **G**      | G      | A      | B      | C`r s` | D      | E      | F`r s` |
+| **D**      | D      | E      | F`r s` | G`r s` | A      | B      | C`r s` |
+| **A**      | A      | B      | C`r s` | D`r s` | E      | F`r s` | G`r s` |
+| **E**      | E      | F`r s` | G`r s` | A`r s` | B      | C`r s` | D`r s` |
+| **B**      | B      | C`r s` | D`r s` | E`r s` | F`r s` | G`r s` | A`r s` |
+| **G**`r f` | G`r f` | A`r f` | B`r f` | C      | D`r f` | E`r f` | F      |
+| **D**`r f` | D`r f` | E`r f` | F      | G      | A`r f` | B`r f` | C      |
+| **A**`r f` | A`r f` | B`r f` | C      | D      | E`r f` | F      | G      |
+| **E**`r f` | E`r f` | F      | G      | A      | B`r f` | C      | D      |
+| **B**`r f` | B`r f` | C      | D      | E      | F      | G      | A      |
+
 ## Mixolydian Mode Notes
+
+|            | P1     | M2     | M3     | P4     | P5     | M6     | m7     |
+|:-----------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
+| **G**      | G      | A      | B      | C      | D      | E      | F      |
+| **D**      | D      | E      | F`r s` | G      | A      | B      | C      |
+| **A**      | A      | B      | C`r s` | D      | E      | F`r s` | G      |
+| **E**      | E      | F`r s` | G`r s` | A      | B      | C`r s` | D      |
+| **B**      | B      | C`r s` | D`r s` | E      | F`r s` | G`r s` | A      |
+| **F**`r s` | F`r s` | G`r s` | A`r s` | B      | C`r s` | D`r s` | E      |
+| **C**`r s` | C`r s` | D`r s` | E`r s` | F`r s` | G`r s` | A`r s` | B      |
+| **A**`r f` | A`r f` | B`r f` | C      | D`r f` | E`r f` | F      | G`r f` |
+| **E**`r f` | E`r f` | F      | G      | A`r f` | B`r f` | C      | D`r f` |
+| **B**`r f` | B`r f` | C      | D      | E`r f` | F      | G      | A`r f` |
+| **F**      | F      | G      | A      | B`r f` | C      | D      | E`r f` |
+| **C**      | C      | D      | E      | F      | G      | A      | B`r f` |
 
 ## Aeolian Mode Notes
 
@@ -79,3 +109,18 @@ Below are charts for all of the modes, and their notes and intervals.
 | **D**      | D      | E      | F      | G      | A      | B`r f` | C      |
 
 ## Locrian Mode Notes
+
+|            | P1     | m2     | m3     | M4     | d5     | m6     | m7     |
+|:-----------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
+| **B**      | B      | C      | D      | E      | F      | G      | A      |
+| **F**`r s` | F`r s` | G      | A      | B      | C      | D      | E      |
+| **C**`r s` | C`r s` | D      | E      | F`r s` | G      | A      | B      |
+| **G**`r s` | G`r s` | A      | B      | C`r s` | D      | E      | F`r s` |
+| **D**`r s` | D`r s` | E      | F`r s` | G`r s` | A      | B      | C`r s` |
+| **A**`r s` | A`r s` | B      | C`r s` | D`r s` | E      | F`r s` | G`r s` |
+| **E**`r s` | E`r s` | F`r s` | G`r s` | A`r s` | B      | C`r s` | D`r s` |
+| **C**      | C      | D`r f` | E`r f` | F      | G`r f` | A`r f` | B`r f` |
+| **G**      | G      | A`r f` | B`r f` | C      | D`r f` | E`r f` | F      |
+| **D**      | D      | E`r f` | F      | G      | A`r f` | B`r f` | C      |
+| **A**      | A      | B`r f` | C      | D      | E`r f` | F      | G      |
+| **E**      | E      | F      | G      | A      | B`r f` | C      | D      |
