@@ -11,19 +11,25 @@ rmd_files: [
   intro.Rmd,
   
   theory.Rmd,
+  sound.Rmd,
   intervals.Rmd,
   scales.Rmd,
   rhythm.Rmd,
+  harmony.Rmd,
   
   performance.Rmd,
+  dynamics.Rmd,
   
   recording.Rmd,
   
   resources.Rmd,
   intervals-guitar.Rmd,
   scales-resource.Rmd,
+  scales-guitar.Rmd,
   
   contribute.Rmd,
+  
+  references.Rmd,
 ]
 
 before_chapter_script: "_common.R"
