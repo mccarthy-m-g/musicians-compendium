@@ -1,1 +1,35 @@
 # Rhythm
+
+```{r}
+source("_musicSymbols.R") # have to call this here because it does not work when called in `_common.R` or when called as a before_chapter_script in `_bookdown.yml`
+```
+
+>"You hit on *the one*, and then you would try to fit your different notes---what you felt---in-between that, you know. And that's the funk." - Bootsy Collins
+
+**Rhythm** is the timing of musical sounds and silences over time.
+
+Table: (\#tab:rhythm) Rhythm symbols and their durations.
+
+| Note                          | Symbol                 | Duration        |
+|:------------------------------|:-----------------------|:----------------|
+| Dotted whole note             | `r whole.`             | 6 beats         |
+| Whole note                    | `r whole`              | 4 beats         |
+| <br>Dotted half note          | <br>`r half.`          | <br>3 beats     |
+| <br>Half note                 | <br>`r half`           | <br>2 beats     |
+| <br>Dotted quarter note       | <br>`r quarter.`       | <br>1 1/2 beats |
+| <br>Quarter note              | <br>`r quarter`        | <br>1 beat      |
+| <br>Dotted eighth note        | <br>`r eighth.`        | <br>3/4 beat    |
+| <br>Eighth note               | <br>`r eighth`         | <br>1/2 beat    |
+| <br>Dotted sixteenth note     | <br>`r sixteenth.`     | <br>3/8 beat    |
+| <br>Sixteenth note            | <br>`r sixteenth`      | <br>1/4 beat    |
+| <br>Dotted thirty-second note | <br>`r thirty_second.` | <br>3/16 beat   |
+| <br>Thirty-second note        | <br>`r thirty_second`  | <br>1/8 beat    |
+| <br>Dotted sixty-fourth note  | <br>`r sixty_fourth.`  | <br>3/32 beat   |
+| <br>Sixty-fourth note         | <br>`r sixty_fourth`   | <br>1/16 beat   |
+
+
+```{r}
+x <- read.csv("tables/rhythm-symbols.csv") %>%
+  knitr::kable()
+# this probably isn't going to work so I probably have to use raw text tables
+```
