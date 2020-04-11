@@ -29,7 +29,7 @@ Table: (\#tab:rhythm) Rhythm symbols and their durations.
 
 
 ```{r}
-x <- read.csv("tables/rhythm-symbols.csv") %>%
-  knitr::kable()
+# x <- read.csv("tables/rhythm-symbols.csv") %>%
+#   knitr::kable()
 # this probably isn't going to work so I probably have to use raw text tables
 ```
