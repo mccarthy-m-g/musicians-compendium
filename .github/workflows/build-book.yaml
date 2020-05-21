@@ -16,6 +16,10 @@ jobs:
         run: |
           brew install pandoc
           brew install pandoc-citeproc
+          
+      - name: Install librsvg
+        run: |
+          brew install librsvg
 
 #      - name: Install LilyPond
 #        run: |
