@@ -12,11 +12,11 @@ Plotting the intervals of a scale onto the guitar fretboard allows us to identif
 # position 1 ------------------------------------------------------------------
 
 # notes
-string_p1 <- c(6,  6, 5, 5,  5, 4, 4,  4, 3, 3,  3, 2,  2, 1, 1,  1)
-fret_p1   <- c(8, 10, 7, 8, 10, 7, 9, 10, 7, 9, 10, 8, 10, 7, 8, 10)
+string_p1 <- c(6, 6,  6, 5, 5,  5, 4, 4,  4, 3, 3,  3, 2,  2, 1, 1,  1)
+fret_p1   <- c(7, 8, 10, 7, 8, 10, 7, 9, 10, 7, 9, 10, 8, 10, 7, 8, 10)
 
 # colors
-idx_p1 <- c(1, rep(2, 6), 1, rep(2, 6), 1, 2)
+idx_p1 <- c(2, 1, rep(2, 6), 1, rep(2, 6), 1, 2)
 pt_fill_p1 <- c("firebrick1", "black")[idx_p1]
 
 # plot
@@ -185,11 +185,11 @@ p4 <- tabr::plot_fretboard(string_p4, fret_p4, "notes",
 # position 5 ------------------------------------------------------------------
 
 # notes
-string_p5 <- c(6,  6, 5, 5,  5, 4, 4,  4, 3, 3,  3, 2,  2, 1, 1,  1)
-fret_p5   <- c(8, 10, 7, 8, 10, 7, 9, 10, 7, 9, 10, 8, 10, 7, 8, 10)
+string_p5 <- c(6, 6,  6, 5, 5,  5, 4, 4,  4, 3, 3,  3, 2,  2, 1, 1,  1)
+fret_p5   <- c(7, 8, 10, 7, 8, 10, 7, 9, 10, 7, 9, 10, 8, 10, 7, 8, 10)
 
 # colors
-idx_p5 <- c(2, 1, rep(2, 6), 1, rep(2, 6), 1)
+idx_p5 <- c(rep(2, 2), 1, rep(2, 6), 1, rep(2, 6), 1)
 pt_fill_p5 <- c("firebrick1", "black")[idx_p5]
 
 # plot
@@ -276,11 +276,11 @@ p3 <- tabr::plot_fretboard(string_p3, fret_p3, "notes",
 # position 4 ------------------------------------------------------------------
 
 # notes
-string_p4 <- c(6,  6, 5, 5,  5, 4, 4,  4, 3, 3,  3, 2,  2, 1, 1,  1)
-fret_p4   <- c(8, 10, 7, 8, 10, 7, 9, 10, 7, 9, 10, 8, 10, 7, 8, 10)
+string_p4 <- c(6, 6,  6, 5, 5,  5, 4, 4,  4, 3, 3,  3, 2,  2, 1, 1,  1)
+fret_p4   <- c(7, 8, 10, 7, 8, 10, 7, 9, 10, 7, 9, 10, 8, 10, 7, 8, 10)
 
 # colors
-idx_p4 <- c(rep(2, 2), 1, rep(2, 6), 1, rep(2, 6))
+idx_p4 <- c(rep(2, 3), 1, rep(2, 6), 1, rep(2, 6))
 pt_fill_p4 <- c("firebrick1", "black")[idx_p4]
 
 # plot
@@ -331,15 +331,430 @@ p1 + p2 + p3 + p4 + p5 +
 
 **Intervals:** P1 M2 M3 A4 P5 M6 M7
 
+```{r}
+# position 1 ------------------------------------------------------------------
+
+# notes
+string_p1 <- c(6, 6, 6, 5, 5, 5, 4, 4, 4, 3, 3, 2, 2, 2, 1, 1, 1)
+fret_p1   <- c(0, 1, 3, 0, 2, 3, 0, 2, 3, 0, 2, 0, 1, 3, 0, 1, 3)
+
+# colors
+idx_p1 <- c(2, 1, rep(2, 6), 1, rep(2, 6), 1, 2)
+pt_fill_p1 <- c("firebrick1", "black")[idx_p1]
+
+# plot
+p1 <- tabr::plot_fretboard(string_p1, fret_p1, "notes",
+                     fret_range = c(0, 4), show_tuning = TRUE, 
+                     point_fill = pt_fill_p1, asp = 1.25, point_size = 8) +
+  ggplot2::ggtitle("Position 1")
+
+# position 2 ------------------------------------------------------------------
+
+# notes
+string_p2 <- c(6, 6, 5, 5, 5, 4, 4, 4, 3, 3, 3, 2, 2, 2, 1, 1)
+fret_p2   <- c(3, 5, 2, 3, 5, 2, 3, 5, 2, 4, 5, 3, 5, 6, 3, 5)
+
+# colors
+idx_p2 <- c(rep(2, 6), 1, rep(2, 6), 1, rep(2, 2))
+pt_fill_p2 <- c("firebrick1", "black")[idx_p2]
+
+# plot
+p2 <- tabr::plot_fretboard(string_p2, fret_p2, "notes",
+                     fret_range = c(2, 7), show_tuning = TRUE, 
+                     point_fill = pt_fill_p2, asp = 1.25, point_size = 8) +
+  ggplot2::ggtitle("Position 2")
+
+# position 3 ------------------------------------------------------------------
+
+# notes
+string_p3 <- c(6, 6, 6, 5, 5, 5, 4, 4, 3, 3, 3, 2, 2, 2, 1, 1, 1)
+fret_p3   <- c(5, 7, 8, 5, 7, 8, 5, 7, 4, 5, 7, 5, 6, 8, 5, 7, 8)
+
+# colors
+idx_p3 <- c(rep(2, 5), 1, rep(2, 6), 1, rep(2, 4))
+pt_fill_p3 <- c("firebrick1", "black")[idx_p3]
+
+# plot
+p3 <- tabr::plot_fretboard(string_p3, fret_p3, "notes",
+                     fret_range = c(4, 9), show_tuning = TRUE, 
+                     point_fill = pt_fill_p3, asp = 1.25, point_size = 8) +
+  ggplot2::ggtitle("Position 3")
+
+# position 4 ------------------------------------------------------------------
+
+# notes
+string_p4 <- c(6, 6,  6, 5, 5,  5, 4, 4,  4, 3, 3,  3, 2,  2, 1, 1,  1)
+fret_p4   <- c(7, 8, 10, 7, 8, 10, 7, 9, 10, 7, 9, 10, 8, 10, 7, 8, 10)
+
+# colors
+idx_p4 <- c(rep(2, 4), 1, rep(2, 6), 1, rep(2, 5))
+pt_fill_p4 <- c("firebrick1", "black")[idx_p4]
+
+# plot
+p4 <- tabr::plot_fretboard(string_p4, fret_p4, "notes",
+                     fret_range = c(7, 11), show_tuning = TRUE, 
+                     point_fill = pt_fill_p4, asp = 1.25, point_size = 8) +
+  ggplot2::ggtitle("Position 4")
+
+# position 5 ------------------------------------------------------------------
+
+# notes
+string_p5 <- c(6,   6,  6,  5,  5, 4,  4,  4, 3,  3,  3,  2,  2,  2,  1,  1,  1)
+fret_p5   <- c(10, 12, 13, 10, 12, 9, 10, 12, 9, 10, 12, 10, 12, 13, 10, 12, 13)
+
+# colors
+idx_p5 <- c(rep(2, 2), 1, rep(2, 6), 1, rep(2, 6), 1)
+pt_fill_p5 <- c("firebrick1", "black")[idx_p5]
+
+# plot
+p5 <- tabr::plot_fretboard(string_p5, fret_p5, "notes",
+                     fret_range = c(9, 14), show_tuning = TRUE, 
+                     point_fill = pt_fill_p5, asp = 1.25, point_size = 8) +
+  ggplot2::ggtitle("Position 5")
+
+
+# all positions ---------------------------------------------------------------
+
+pA <- tabr::plot_fretboard(
+  c(string_p1, string_p2, string_p3, string_p4, string_p5),
+  c(fret_p1, fret_p2, fret_p3, fret_p4, fret_p5),
+  "notes", horizontal = TRUE, fret_range = c(0, 14), show_tuning = TRUE,
+  asp = 0.25, point_size = 8,
+  point_fill = c(pt_fill_p1, pt_fill_p2, pt_fill_p3, pt_fill_p4, pt_fill_p5)
+  ) +
+  ggplot2::ggtitle("All Positions")
+
+```
+
+```{r, fig.height=2.5}
+pA
+```
+
+```{r, fig.height=6.5}
+p1 + p2 + p3 + p4 + p5 + 
+  plot_layout(ncol = 3)
+```
+
 ## Mixolydian
 
 **Intervals:** P1 M2 M3 P4 P5 M6 m7
+
+```{r}
+# position 1 ------------------------------------------------------------------
+
+# notes
+string_p1 <- c(6, 6, 5, 5, 5, 4, 4, 4, 3, 3, 3, 2, 2, 2, 1, 1)
+fret_p1   <- c(3, 5, 2, 3, 5, 2, 3, 5, 2, 4, 5, 3, 5, 6, 3, 5)
+
+# colors
+idx_p1 <- c(1, rep(2, 6), 1, rep(2, 6), 1, 2)
+pt_fill_p1 <- c("firebrick1", "black")[idx_p1]
+
+# plot
+p1 <- tabr::plot_fretboard(string_p1, fret_p1, "notes",
+                     fret_range = c(2, 7), show_tuning = TRUE, 
+                     point_fill = pt_fill_p1, asp = 1.25, point_size = 8) +
+  ggplot2::ggtitle("Position 1")
+
+# position 2 ------------------------------------------------------------------
+
+# notes
+string_p2 <- c(6, 6, 6, 5, 5, 5, 4, 4, 3, 3, 3, 2, 2, 2, 1, 1, 1)
+fret_p2   <- c(5, 7, 8, 5, 7, 8, 5, 7, 4, 5, 7, 5, 6, 8, 5, 7, 8)
+
+# colors
+idx_p2 <- c(rep(2, 6), 1, rep(2, 6), 1, rep(2, 3))
+pt_fill_p2 <- c("firebrick1", "black")[idx_p2]
+
+# plot
+p2 <- tabr::plot_fretboard(string_p2, fret_p2, "notes",
+                     fret_range = c(4, 9), show_tuning = TRUE, 
+                     point_fill = pt_fill_p2, asp = 1.25, point_size = 8) +
+  ggplot2::ggtitle("Position 2")
+
+# position 3 ------------------------------------------------------------------
+
+# notes
+string_p3 <- c(6, 6,  6, 5, 5,  5, 4, 4,  4, 3, 3,  3, 2,  2, 1, 1,  1)
+fret_p3   <- c(7, 8, 10, 7, 8, 10, 7, 9, 10, 7, 9, 10, 8, 10, 7, 8, 10)
+
+# colors
+idx_p3 <- c(rep(2, 5), 1, rep(2, 6), 1, rep(2, 4))
+pt_fill_p3 <- c("firebrick1", "black")[idx_p3]
+
+# plot
+p3 <- tabr::plot_fretboard(string_p3, fret_p3, "notes",
+                     fret_range = c(7, 11), show_tuning = TRUE, 
+                     point_fill = pt_fill_p3, asp = 1.25, point_size = 8) +
+  ggplot2::ggtitle("Position 3")
+
+# position 4 ------------------------------------------------------------------
+
+# notes
+string_p4 <- c(6,   6,  6,  5,  5, 4,  4,  4, 3,  3,  3,  2,  2,  2,  1,  1,  1)
+fret_p4   <- c(10, 12, 13, 10, 12, 9, 10, 12, 9, 10, 12, 10, 12, 13, 10, 12, 13)
+
+# colors
+idx_p4 <- c(rep(2, 3), 1, rep(2, 6), 1, rep(2, 6))
+pt_fill_p4 <- c("firebrick1", "black")[idx_p4]
+
+# plot
+p4 <- tabr::plot_fretboard(string_p4, fret_p4, "notes",
+                     fret_range = c(9, 14), show_tuning = TRUE, 
+                     point_fill = pt_fill_p4, asp = 1.25, point_size = 8) +
+  ggplot2::ggtitle("Position 4")
+
+
+# position 5 ------------------------------------------------------------------
+
+# notes
+string_p5 <- c(6, 6, 6, 5, 5, 5, 4, 4, 4, 3, 3, 2, 2, 2, 1, 1, 1)
+fret_p5   <- c(0, 1, 3, 0, 2, 3, 0, 2, 3, 0, 2, 0, 1, 3, 0, 1, 3)
+
+# colors
+idx_p5 <- c(rep(2, 2), 1, rep(2, 6), 1, rep(2, 6), 1)
+pt_fill_p5 <- c("firebrick1", "black")[idx_p5]
+
+# plot
+p5 <- tabr::plot_fretboard(string_p5, fret_p5, "notes",
+                     fret_range = c(0, 4), show_tuning = TRUE, 
+                     point_fill = pt_fill_p5, asp = 1.25, point_size = 8) +
+  ggplot2::ggtitle("Position 5")
+
+# all positions ---------------------------------------------------------------
+
+pA <- tabr::plot_fretboard(
+  c(string_p1, string_p2, string_p3, string_p4, string_p5),
+  c(fret_p1, fret_p2, fret_p3, fret_p4, fret_p5),
+  "notes", horizontal = TRUE, fret_range = c(0, 14), show_tuning = TRUE,
+  asp = 0.25, point_size = 8,
+  point_fill = c(pt_fill_p1, pt_fill_p2, pt_fill_p3, pt_fill_p4, pt_fill_p5)
+  ) +
+  ggplot2::ggtitle("All Positions")
+
+```
+
+```{r, fig.height=2.5}
+pA
+```
+
+```{r, fig.height=6.5}
+p1 + p2 + p3 + p4 + p5 + 
+  plot_layout(ncol = 3)
+```
 
 ## Aeolian
 
 **Intervals:** P1 M2 m3 P4 P5 m6 m7
 
+```{r}
+# position 1 ------------------------------------------------------------------
+
+# notes
+string_p1 <- c(6, 6, 6, 5, 5, 5, 4, 4, 3, 3, 3, 2, 2, 2, 1, 1, 1)
+fret_p1   <- c(5, 7, 8, 5, 7, 8, 5, 7, 4, 5, 7, 5, 6, 8, 5, 7, 8)
+
+# colors
+idx_p1 <- c(1, rep(2, 6), 1, rep(2, 6), 1, rep(2, 2))
+pt_fill_p1 <- c("firebrick1", "black")[idx_p1]
+
+# plot
+p1 <- tabr::plot_fretboard(string_p1, fret_p1, "notes",
+                     fret_range = c(4, 9), show_tuning = TRUE, 
+                     point_fill = pt_fill_p1, asp = 1.25, point_size = 8) +
+  ggplot2::ggtitle("Position 1")
+
+# position 2 ------------------------------------------------------------------
+
+# notes
+string_p2 <- c(6, 6,  6, 5, 5,  5, 4, 4,  4, 3, 3,  3, 2,  2, 1, 1,  1)
+fret_p2   <- c(7, 8, 10, 7, 8, 10, 7, 9, 10, 7, 9, 10, 8, 10, 7, 8, 10)
+
+# colors
+idx_p2 <- c(rep(2, 6), 1, rep(2, 6), 1, rep(2, 3))
+pt_fill_p2 <- c("firebrick1", "black")[idx_p2]
+
+# plot
+p2 <- tabr::plot_fretboard(string_p2, fret_p2, "notes",
+                     fret_range = c(7, 11), show_tuning = TRUE, 
+                     point_fill = pt_fill_p2, asp = 1.25, point_size = 8) +
+  ggplot2::ggtitle("Position 2")
+
+# position 3 ------------------------------------------------------------------
+
+# notes
+string_p3 <- c(6,   6,  6,  5,  5, 4,  4,  4, 3,  3,  3,  2,  2,  2,  1,  1,  1)
+fret_p3   <- c(10, 12, 13, 10, 12, 9, 10, 12, 9, 10, 12, 10, 12, 13, 10, 12, 13)
+
+# colors
+idx_p3 <- c(rep(2, 4), 1, rep(2, 6), 1, rep(2, 5))
+pt_fill_p3 <- c("firebrick1", "black")[idx_p3]
+
+# plot
+p3 <- tabr::plot_fretboard(string_p3, fret_p3, "notes",
+                     fret_range = c(9, 14), show_tuning = TRUE, 
+                     point_fill = pt_fill_p3, asp = 1.25, point_size = 8) +
+  ggplot2::ggtitle("Position 3")
+
+
+# position 4 ------------------------------------------------------------------
+
+# notes
+string_p4 <- c(6, 6, 6, 5, 5, 5, 4, 4, 4, 3, 3, 2, 2, 2, 1, 1, 1)
+fret_p4   <- c(0, 1, 3, 0, 2, 3, 0, 2, 3, 0, 2, 0, 1, 3, 0, 1, 3)
+
+# colors
+idx_p4 <- c(rep(2, 3), 1, rep(2, 6), 1, rep(2, 6))
+pt_fill_p4 <- c("firebrick1", "black")[idx_p4]
+
+# plot
+p4 <- tabr::plot_fretboard(string_p4, fret_p4, "notes",
+                     fret_range = c(0, 4), show_tuning = TRUE, 
+                     point_fill = pt_fill_p4, asp = 1.25, point_size = 8) +
+  ggplot2::ggtitle("Position 4")
+
+# position 5 ------------------------------------------------------------------
+
+# notes
+string_p5 <- c(6, 6, 5, 5, 5, 4, 4, 4, 3, 3, 3, 2, 2, 2, 1, 1)
+fret_p5   <- c(3, 5, 2, 3, 5, 2, 3, 5, 2, 4, 5, 3, 5, 6, 3, 5)
+
+# colors
+idx_p5 <- c(2, 1, rep(2, 6), 1, rep(2, 6), 1)
+pt_fill_p5 <- c("firebrick1", "black")[idx_p5]
+
+# plot
+p5 <- tabr::plot_fretboard(string_p5, fret_p5, "notes",
+                     fret_range = c(2, 7), show_tuning = TRUE, 
+                     point_fill = pt_fill_p5, asp = 1.25, point_size = 8) +
+  ggplot2::ggtitle("Position 5")
+
+# all positions ---------------------------------------------------------------
+
+pA <- tabr::plot_fretboard(
+  c(string_p1, string_p2, string_p3, string_p4, string_p5),
+  c(fret_p1, fret_p2, fret_p3, fret_p4, fret_p5),
+  "notes", horizontal = TRUE, fret_range = c(0, 14), show_tuning = TRUE,
+  asp = 0.25, point_size = 8,
+  point_fill = c(pt_fill_p1, pt_fill_p2, pt_fill_p3, pt_fill_p4, pt_fill_p5)
+  ) +
+  ggplot2::ggtitle("All Positions")
+
+```
+
+```{r, fig.height=2.5}
+pA
+```
+
+```{r, fig.height=6.5}
+p1 + p2 + p3 + p4 + p5 + 
+  plot_layout(ncol = 3)
+```
+
 ## Locrian
 
 **Intervals:** P1 m2 m3 P4 d5 m6 m7
 
+```{r}
+# position 1 ------------------------------------------------------------------
+
+# notes
+string_p1 <- c(6, 6,  6, 5, 5,  5, 4, 4,  4, 3, 3,  3, 2,  2, 1, 1,  1)
+fret_p1   <- c(7, 8, 10, 7, 8, 10, 7, 9, 10, 7, 9, 10, 8, 10, 7, 8, 10)
+
+# colors
+idx_p1 <- c(1, rep(2, 6), 1, rep(2, 6), 1, rep(2, 2))
+pt_fill_p1 <- c("firebrick1", "black")[idx_p1]
+
+# plot
+p1 <- tabr::plot_fretboard(string_p1, fret_p1, "notes",
+                     fret_range = c(7, 11), show_tuning = TRUE, 
+                     point_fill = pt_fill_p1, asp = 1.25, point_size = 8) +
+  ggplot2::ggtitle("Position 1")
+
+# position 2 ------------------------------------------------------------------
+
+# notes
+string_p2 <- c(6,   6,  6,  5,  5, 4,  4,  4, 3,  3,  3,  2,  2,  2,  1,  1,  1)
+fret_p2   <- c(10, 12, 13, 10, 12, 9, 10, 12, 9, 10, 12, 10, 12, 13, 10, 12, 13)
+
+# colors
+idx_p2 <- c(rep(2, 5), 1, rep(2, 6), 1, rep(2, 4))
+pt_fill_p2 <- c("firebrick1", "black")[idx_p2]
+
+# plot
+p2 <- tabr::plot_fretboard(string_p2, fret_p2, "notes",
+                     fret_range = c(9, 14), show_tuning = TRUE, 
+                     point_fill = pt_fill_p2, asp = 1.25, point_size = 8) +
+  ggplot2::ggtitle("Position 2")
+
+
+# position 3 ------------------------------------------------------------------
+
+# notes
+string_p3 <- c(6, 6, 6, 5, 5, 5, 4, 4, 4, 3, 3, 2, 2, 2, 1, 1, 1)
+fret_p3   <- c(0, 1, 3, 0, 2, 3, 0, 2, 3, 0, 2, 0, 1, 3, 0, 1, 3)
+
+# colors
+idx_p3 <- c(rep(2, 4), 1, rep(2, 6), 1, rep(2, 5))
+pt_fill_p3 <- c("firebrick1", "black")[idx_p3]
+
+# plot
+p3 <- tabr::plot_fretboard(string_p3, fret_p3, "notes",
+                     fret_range = c(0, 4), show_tuning = TRUE, 
+                     point_fill = pt_fill_p3, asp = 1.25, point_size = 8) +
+  ggplot2::ggtitle("Position 3")
+
+# position 4 ------------------------------------------------------------------
+
+# notes
+string_p4 <- c(6, 6, 5, 5, 5, 4, 4, 4, 3, 3, 3, 2, 2, 2, 1, 1)
+fret_p4   <- c(3, 5, 2, 3, 5, 2, 3, 5, 2, 4, 5, 3, 5, 6, 3, 5)
+
+# colors
+idx_p4 <- c(rep(2, 2), 1, rep(2, 6), 1, rep(2, 6))
+pt_fill_p4 <- c("firebrick1", "black")[idx_p4]
+
+# plot
+p4 <- tabr::plot_fretboard(string_p4, fret_p4, "notes",
+                     fret_range = c(2, 7), show_tuning = TRUE, 
+                     point_fill = pt_fill_p4, asp = 1.25, point_size = 8) +
+  ggplot2::ggtitle("Position 4")
+
+# position 5 ------------------------------------------------------------------
+
+# notes
+string_p5 <- c(6, 6, 6, 5, 5, 5, 4, 4, 3, 3, 3, 2, 2, 2, 1, 1, 1)
+fret_p5   <- c(5, 7, 8, 5, 7, 8, 5, 7, 4, 5, 7, 5, 6, 8, 5, 7, 8)
+
+# colors
+idx_p5 <- c(2, 1, rep(2, 6), 1, rep(2, 6), 1, 2)
+pt_fill_p5 <- c("firebrick1", "black")[idx_p5]
+
+# plot
+p5 <- tabr::plot_fretboard(string_p5, fret_p5, "notes",
+                     fret_range = c(4, 9), show_tuning = TRUE, 
+                     point_fill = pt_fill_p5, asp = 1.25, point_size = 8) +
+  ggplot2::ggtitle("Position 5")
+
+# all positions ---------------------------------------------------------------
+
+pA <- tabr::plot_fretboard(
+  c(string_p1, string_p2, string_p3, string_p4, string_p5),
+  c(fret_p1, fret_p2, fret_p3, fret_p4, fret_p5),
+  "notes", horizontal = TRUE, fret_range = c(0, 14), show_tuning = TRUE,
+  asp = 0.25, point_size = 8,
+  point_fill = c(pt_fill_p1, pt_fill_p2, pt_fill_p3, pt_fill_p4, pt_fill_p5)
+  ) +
+  ggplot2::ggtitle("All Positions")
+
+```
+
+```{r, fig.height=2.5}
+pA
+```
+
+```{r, fig.height=6.5}
+p1 + p2 + p3 + p4 + p5 + 
+  plot_layout(ncol = 3)
+```
