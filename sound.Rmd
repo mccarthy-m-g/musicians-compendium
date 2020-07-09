@@ -6,7 +6,23 @@ One function of music theory is to provide musicians with a common language for 
 
 Sound is a **longitudinal, mechanical wave of pressure** that transfers energy through a solid, liquid, or gas medium. Sound occurs when a vibrating object---the sound **source**---displaces the particles around it, causing them to vibrate. These vibrations will propagate in the direction of the wave, creating variations in pressure along their path until they run out of energy [@hansen_FundamentalsAcoustics_1995].
 
-Most sounds <!-- produced by musical instruments --> can be categorized as either noise or tone (or some blurry combination of the two). **Noise** refers to an unpitched sound, such as a clap or drum hit. **Tone** refers to a pitched sound, such as a whistle or guitar melody. Tones can be pure or complex. **Pure tones**, as their name implies, are the purest form of sound, consisting of a single sound wave. A pure tone is characterized by its amplitude, wavelength, frequency, phase, and period [@burgetal_DigitalSoundMusic_2016].
+Most sounds produced by musical instruments can be categorized as either noise or tone (or some blurry combination of the two). **Noise** refers to an unpitched sound, such as a clap or drum hit. **Tone** refers to a pitched sound, such as a whistle or guitar melody. Musical instruments that produce noise are called **unpitched instruments**, and musical instruments that produce tone are called **pitched instruments**.
+
+Whether a musical instrument produces noise or tone (or noise *and* tone) depends on the collective behaviour of several sound sources, which interact to give an instrument its unique sound. Some familiar sound sources in musical instruments are the vibrations of strings (violin, guitar, piano, etc.), bars or rods (xylophone, glockenspiel, chimes, clarinet reed), membranes (drums, banjo), plates or shells (cymbal, gong, bell), air in a tube (organ pipe, brass and woodwind instruments, marimba resonator), air in an enclosed container (drum, violin, or guitar body), or electricity (synthesizers) [@fletcherrossing_PhysicsMusicalInstruments_1998].
+
+Although the sound sources of musical instruments can be vastly different, the sounds they produce all share a number of characteristics which we will discuss below.
+
+### Pure tones
+
+A **pure tone** is the purest form of sound, consisting of a single sinusoidal sound wave. Most sounds we hear are made from, or can be reduced to, different combinations of multiple pure tones. Because of this, pure tones can be thought of as the basic building blocks of sound.
+
+<!-- However, it is very rare to hear a pure tone on its own as they rarely occur in nature. -->
+
+A pure tone is characterized by its amplitude, wavelength, frequency, phase, and period [@burgetal_DigitalSoundMusic_2016].
+
+- **Amplitude** is ...
+
+
 
 <!-- define characteristics here -->
 
@@ -15,13 +31,6 @@ Most sounds <!-- produced by musical instruments --> can be categorized as eithe
 ```
 
 <!-- Both noise and complex tones can be thought of as being made of multiple pure tones -->
-
-Sound production in musical instruments often depends on the collective behaviour of several sound sources, which interact to give an instrument its unique sound. Some familiar sound sources in musical instruments are the vibrations of strings (violin, guitar, piano, etc.), bars or rods (xylophone, glockenspiel, chimes, clarinet reed), membranes (drums, banjo), plates or shells (cymbal, gong, bell), air in a tube (organ pipe, brass and woodwind instruments, marimba resonator), air in an enclosed container (drum, violin, or guitar body), or electricity (synthesizers) [@fletcherrossing_PhysicsMusicalInstruments_1998].
-
-### Noise and tone
-
-Most sounds produced by musical instruments can be categorized as either noise or tone (or some blurry combination of the two). **Noise** refers to an unpitched sound, such as a clap or drum hit. **Tone** refers to a pitched sound, such as a whistle or guitar melody. 
-
 <!-- The distinction between noise and tone largely depends on the frequencies present in a sound and their relative amplitudes. -->
 
 Tones can be pure or complex. **Pure tones** are made of a single sound wave and **complex tones** are made of multiple sound waves. The waveforms in complex tones are called **partials**, with the lowest frequency partial in the tone being referred to as the **fundamental**, and the partials above the fundamental being referred to as **overtones**. Most tones you hear in music are complex, with notable exceptions coming from tuning forks and some electronic music instruments.
@@ -43,7 +52,7 @@ Because sound travels as a wave, we can visualize what any given sound would loo
 
 ## Psychological properties of sound
 
-When a sound wave reaches our ear it is directed by the **external ear** towards the **middle ear**, where it will strike our **ear drum**, causing it to vibrate at the same frequency as the sound wave. These vibrations are transmitted to the middle ear bones, whose vibrations create waves in the fluid of the **cochlea** in the **inner ear**. These waves travel through the cochlea, eventually vibrating the **organ of Corti**, causing hair cells in the organ to brush against a fixed structure called the **tectorial membrane**. This brushing causes the nerve fibers attached to the hairs to depolarize, creating electrical impulses that our sent to the brain for further processing in the **auditory cortex** [@amuntsetal_Chapter36Auditory_2012; @casalemurr_PhysiologyCochlearFunction_2020]. By the end of this complex process, we hear sound. <!-- this is a pretty info-heavy paragraph, maybe simplify it. -->
+When a sound wave reaches our ear it is directed by the **external ear** towards the **middle ear**, where it will strike our **ear drum**, causing it to vibrate at the same frequency as the sound wave. These vibrations are transmitted to the middle ear bones, whose vibrations create waves in the fluid of the **cochlea** in the **inner ear**. These waves travel through the cochlea, eventually vibrating the **organ of Corti**, causing hair cells in the organ to brush against a fixed structure called the **tectorial membrane**. This brushing causes the nerve fibers attached to the hairs to depolarize, creating electrical impulses that are sent to the brain for further processing in the **auditory cortex** [@amuntsetal_Chapter36Auditory_2012; @casalemurr_PhysiologyCochlearFunction_2020]. By the end of this complex process, we hear sound. <!-- this is a pretty info-heavy paragraph, maybe simplify it. -->
 <!-- it might be interesting to talk about tonotopy and infra- and ultrasound here -->
 
 ## Musical properties
