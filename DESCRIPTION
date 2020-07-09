@@ -3,12 +3,12 @@ Type: Book
 Title: Does not matter.
 Version: 0.0.1
 Imports: bookdown,
-         DiagrammeR,
+         DiagrammeR (== 1.0.5),
          DiagrammeRsvg,
          magick,
          patchwork,
          R.utils,
-         rsvg,
+         rsvg (== 1.3),
          sessioninfo,
          tabr,
          tidyverse,
