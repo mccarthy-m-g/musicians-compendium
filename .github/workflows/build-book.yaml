@@ -13,6 +13,10 @@ jobs:
       matrix:
         config:
           - {os: macOS-latest,   r: '3.6.0'}
+    
+    env:
+      RENV_PATHS_ROOT: ~/Library/Application Support/renv
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@master
