@@ -1,4 +1,4 @@
-# Scales (Guitar)
+# Scales (Guitar) {#scales-guitar}
 
 Plotting the intervals of a scale onto the guitar fretboard allows us to identify patterns for playing the scale at different positions of the neck. These patterns are universal between all keys of the scale and, when combined, they cover all available notes in the key across the fretboard. To use these patterns in different keys you simply shift them up or down the neck. The references below all start on C, so if you wanted to play in D Ionian for example, you should shift each position up two semitones.
 

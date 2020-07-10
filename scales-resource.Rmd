@@ -1,4 +1,4 @@
-# Scales
+# Scales {#scales-resource}
 
 ```{r}
 source("_musicSymbols.R") # have to call this here because it does not work when called in `_common.R` or when called as a before_chapter_script in `_bookdown.yml`
