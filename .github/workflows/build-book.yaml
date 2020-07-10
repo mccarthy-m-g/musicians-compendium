@@ -58,10 +58,10 @@ jobs:
           key: bookdown-${{ hashFiles('**/*Rmd') }}
           restore-keys: bookdown-
 
-      - name: Install packages
-        run: |
-          R -e 'install.packages("remotes")'
-          R -e 'remotes::install_deps(dependencies = TRUE)'
+      # - name: Install packages
+      #   run: |
+      #     R -e 'install.packages("remotes")'
+      #     R -e 'remotes::install_deps(dependencies = TRUE)'
           
       - name: Install PhantomJS
         run: R -e 'webshot::install_phantomjs()'
